@@ -1,11 +1,11 @@
 use sfml::graphics::RenderWindow;
 use sfml::window::{ContextSettings, Style, VideoMode};
 
-use ::rust_invaders::Game;
+use ::rust_invaders::{Game, SCREEN_H, SCREEN_W};
 
 fn main() {
     let window = RenderWindow::new(
-        VideoMode::new(1800, 900, 32),
+        VideoMode::new(SCREEN_W, SCREEN_H, 32),
         "Rust Invaders",
         Style::CLOSE,
         &ContextSettings::default(),
